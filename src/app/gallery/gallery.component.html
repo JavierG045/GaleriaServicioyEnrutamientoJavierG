@@ -1,0 +1,29 @@
+<section class="container py-3">
+    <h2 class="text-center text-uppercase">{{trend}}</h2>
+    <div class="row justify-content-center">
+        
+        <div class="col-md-6 col-lg-6 mb-5 mt-2 d-flex justify-content-center" data-bs-toggle="modal" [attr.data-bs-target]="'#' + modalId1">
+            <img [src]="art1" alt="Imagen" class="img-fluid rounded object-fit-cover w-50">
+        </div>
+        <div class="col-md-6 col-lg-6 mb-5 mt-2 d-flex justify-content-center" data-bs-toggle="modal" [attr.data-bs-target]="'#' + modalId2">
+            <img [src]="art2" alt="Imagen" class="img-fluid rounded object-fit-cover w-50">
+        </div>
+        <div class="col-md-6 col-lg-6 mb-5 mt-2 d-flex justify-content-center" data-bs-toggle="modal" [attr.data-bs-target]="'#' + modalId3">
+            <img [src]="art3" alt="Imagen" class="img-fluid rounded object-fit-cover w-50">
+        </div>
+        <div class="col-md-6 col-lg-6 mb-5 mt-2 d-flex justify-content-center" data-bs-toggle="modal" [attr.data-bs-target]="'#' + modalId4">
+            <img [src]="art4" alt="Imagen" class="img-fluid rounded object-fit-cover w-50">
+        </div>
+    </div>
+
+    <h2 class="text-center mt-5">EL MÁS FAMOSO</h2>
+    <div class="mb-5 mt-5 center d-flex justify-content-center" data-bs-toggle="modal" [attr.data-bs-target]="'#' + modalIdi">
+        <img [src]="important" alt="Imagen" class="img-fluid rounded object-fit-cover w-50">
+    </div>
+
+    <div class="text-center mt-5" 
+    id="Registro">
+        <h1>REGISTRATE PARA TENER NOVEDADES</h1>
+        <p>No te pierdas de todas nuestras novedades</p>
+      </div>
+</section>

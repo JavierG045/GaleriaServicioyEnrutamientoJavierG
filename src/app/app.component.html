@@ -1,0 +1,150 @@
+<!-- app.component.html -->
+<body data-spy="scroll" data-target=".navbar" data-offset="50"></body>
+  <app-navbar></app-navbar>
+   <router-outlet></router-outlet>
+  <div id="vanguardismo">
+    <app-header [title]="title1"></app-header>
+    <app-description 
+      [trend]="trend1" 
+      [image]="exponent1"
+      [description]="description1"
+    ></app-description>
+
+    <app-gallery
+      [trend]="trend1"
+      [art1]="art1"
+      [art2]="art2"
+      [art3]="art3"
+      [art4]="art4"
+      [important]="important1"
+      [modalId1] = "artwork1"
+      [modalId2] = "artwork2"
+      [modalId3] = "artwork3"
+      [modalId4] = "artwork4"
+      [modalIdi] = "artworki"
+    ></app-gallery>
+    
+    <app-modal
+      [modalId]="artwork1"
+      [trend]="trend1"
+      [title]="titleartwork1"
+      [art]="art1"
+      [description] = "description_artwork1"
+      [author] = "author1"
+    ></app-modal>
+
+    <app-modal
+      [modalId]="artwork2"
+      [trend]="trend1"
+      [title]="titleartwork2"
+      [art]="art2"
+      [description] = "description_artwork2"
+      [author] = "author2"
+    ></app-modal>
+
+    <app-modal
+      [modalId]="artwork3"
+      [trend]="trend1"
+      [title]="titleartwork3"
+      [art]="art3"
+      [description] = "description_artwork3"
+      [author] = "author3"
+    ></app-modal>
+
+    <app-modal
+      [modalId]="artwork4"
+      [trend]="trend1"
+      [title]="titleartwork4"
+      [art]="art4"
+      [description] = "description_artwork4"
+      [author] = "author4"
+    ></app-modal>
+
+    <app-modal
+      [modalId]="artworki"
+      [trend]="trend1"
+      [title]="titleartworki1"
+      [art]="important1"
+      [description] = "description_artworki1"
+      [author] = "exponent1"
+    ></app-modal>
+
+  </div>
+
+  <div id="renacentismo">
+    <app-header [title]="title2"></app-header>
+    <app-description 
+      [trend]="trend2" 
+      [image]="exponent2"
+      [description]="description2"
+    ></app-description>
+
+    <app-gallery
+      [trend]="trend2"
+      [art1]="art5"
+      [art2]="art6"
+      [art3]="art7"
+      [art4]="art8"
+      [important]="important2"
+      [modalId1] = "artwork5"
+      [modalId2] = "artwork6"
+      [modalId3] = "artwork7"
+      [modalId4] = "artwork8"
+      [modalIdi] = "artworki2"
+    ></app-gallery>
+
+    <app-modal
+      [modalId]="artwork5"
+      [trend]="trend2"
+      [title]="titleartwork5"
+      [art]="art5"
+      [description] = "description_artwork5"
+      [author] = "exponent2"
+    ></app-modal>
+
+    <app-modal
+      [modalId]="artwork6"
+      [trend]="trend2"
+      [title]="titleartwork6"
+      [art]="art6"
+      [description] = "description_artwork6"
+      [author] = "author6"
+    ></app-modal>
+
+    <app-modal
+      [modalId]="artwork7"
+      [trend]="trend2"
+      [title]="titleartwork7"
+      [art]="art7"
+      [description] = "description_artwork7"
+      [author] = "author7"
+    ></app-modal>
+
+    <app-modal
+      [modalId]="artwork8"
+      [trend]="trend2"
+      [title]="titleartwork8"
+      [art]="art8"
+      [description] = "description_artwork8"
+      [author] = "author8"
+    ></app-modal>
+
+    <app-modal
+      [modalId]="artworki2"
+      [trend]="trend2"
+      [title]="titleartworki2"
+      [art]="important2"
+      [description] = "description_artworki2"
+      [author] = "exponent2"
+    ></app-modal>
+  </div>
+
+
+    <div id="Registro">
+    <app-registration></app-registration>
+    <app-footer></app-footer>
+  </div>  
+
+     <div class="container">
+      <router-outlet></router-outlet>
+    </div>

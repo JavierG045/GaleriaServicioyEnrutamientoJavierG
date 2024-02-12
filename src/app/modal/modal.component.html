@@ -1,0 +1,42 @@
+<!-- Modals -->
+    <div class="modal fade" [id]="modalId" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <!-- Modal - Title-->
+                        <h2 class="text-black text-uppercase mb-5">{{trend}}</h2>
+                        <div class="row">
+                            
+                            
+                            <div class="col-md-6">
+                                <!-- Modal - Title - Artwork-->
+                                <h2 class="bg-black text-white font-bold text-uppercase mb-0">{{title}}</h2>
+                                <!-- Modal - Image - Artwork -->
+                                <img class="img-fluid rounded mb-5" [src]="art" alt="..." />
+                                <!-- Modal - Text-->
+                                <p class="mb-4">{{description}}</p>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Modal - Image - Author -->
+                                <img class="img-fluid rounded mb-2" [src]="author" alt="..." />
+                                <!-- Modal - Text-->
+                                <p class="bg-black text-white font-bold mb-4">Autor</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <h6>VALORA ESTA OBRA</h6>
+                        <div class="star-rating">
+                            <span (click)="setRating(5)" [class.active]="rating >= 5">★</span>
+                            <span (click)="setRating(4)" [class.active]="rating >= 4">★</span>
+                            <span (click)="setRating(3)" [class.active]="rating >= 3">★</span>
+                            <span (click)="setRating(2)" [class.active]="rating >= 2">★</span>
+                            <span (click)="setRating(1)" [class.active]="rating >= 1">★</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

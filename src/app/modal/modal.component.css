@@ -1,0 +1,16 @@
+.star-rating {
+    direction: rtl;
+    font-size: 20px;
+}
+
+.star-rating span {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 1px;
+    text-decoration: none;
+    color: #000;
+}
+
+.star-rating span.active {
+    color: #fde16d;
+}
